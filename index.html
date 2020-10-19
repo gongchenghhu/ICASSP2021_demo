@@ -56,21 +56,22 @@
     </style>
 
     <meta charset="UTF-8">
-    <title>Audio samples from "Controllable neural text-to-speech synthesis using intuitive prosodic features</title>
+    <title>Audio samples from "IMPROVING NATURALNESS AND CONTROLLABILITY OF SEQUENCE-TO-SEQUENCE SPEECH SYNTHESIS BY LEARNING LOCAL PROSODY REPRESENTATIONS"</title>
   </head>
 
   <body>
     <article>
       <header>
-        <h1>Audio samples from "Controllable neural text-to-speech synthesis using intuitive prosodic features"</h1>
+        <h1>Audio samples from "IMPROVING NATURALNESS AND CONTROLLABILITY OF SEQUENCE-TO-SEQUENCE SPEECH SYNTHESIS BY LEARNING LOCAL PROSODY REPRESENTATIONS"</h1>
       </header>
     </article>
     <!-- <br> -->
     <!-- <div style="font-size: 20px;"><b>Paper:</b> <a href="https://arxiv.org/">arXiv</a> </div> -->
     <br>
-    <div style="font-size: 20px;"><b>Authors:</b> Tuomo Raitio, Ramya Rasipuram, Dan Castellani</div>
+    <div style="font-size: 20px;"><b>Authors:</b> Cheng Gong, Longbiao Wang, Zhenhua Ling, Shaotong Guo, Ju Zhang, Jianwu Dang</div>
     <br>
-    <div style="font-size: 20px; width: 1200px;"><b>Abstract:</b> Modern neural text-to-speech (TTS) synthesis can generate speech that is indistinguishable from natural speech. However, the prosody of generated utterances often represents the average prosodic style of the database instead of having wide prosodic variation. Moreover, the generated prosody is solely defined by the input text, which does not allow for different styles for the same sentence. In this work, we train a sequence-to-sequence neural network conditioned on acoustic speech features to learn a latent prosody space with intuitive and meaningful dimensions. Experiments show that a model conditioned on sentence-wise pitch, pitch range, phone duration, energy, and spectral tilt can effectively control each prosodic dimension and generate a wide variety of speaking styles, while maintaining similar mean opinion score (4.23) to our Tacotron baseline (4.26).</div>
+    <div style="font-size: 20px; width: 1200px;"><b>Abstract:</b>State-of-the-art neural text-to-speech (TTS) networks are trained with a large amount of speech data, which significantly
+improves the quality of synthetic speech compared with traditional approaches. However, the prosody and controllability of the generated speech is still insufficient, especially in tonal languages. Moreover, the generated prosody is solely defined by the input text, which does not allow for different styles for the same sentence or words. In this study, we extended Tacotron2 with a pitch prediction task to capture pitch-related representations. Specifically, the learned pitch-related suprasegmental information is fed simultaneously with traditional character features into the decoder to generate a final Mel spectrogram. Experiments show that the proposed method can improve the quality of the generated speech (mean opinion score of 4.37. vs. 4.22). Moreover, we demonstrated that we can easily achieve word-level pitch control during generation by changing local pitch-related representations before passing them to the decoder network.</div>
 
     <br>
     <br>
