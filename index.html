@@ -80,7 +80,7 @@ generate final Mel spectrogram. Experiments show that the proposed method can im
     <br>
     <div style="font-size: 18px"><h2>The following samples demonstrate the prosody control capability by adjusting bias of each prosodic dimension.</div>
     <br>
-    -->
+
     <div><h2>Baseline: -</div>
 
     <table>
@@ -98,103 +98,67 @@ generate final Mel spectrogram. Experiments show that the proposed method can im
       </tbody>
     </table>
 
+      
     <br>
     <br>
+    -->
     <div><h2>Proposed: -</div>
 
     <table>
 
       <thead>
         <tr>
-          <th>Feature / Bias</th>
-          <th style="background-color: #4d94ff;">-1.0</th>
-          <th style="background-color: #80b3ff;">-0.7</th>
-          <th style="background-color: #b3d1ff;">-0.5</th>
-          <th style="background-color: #e6f0ff;">-0.3</th>
-          <th style="background-color: #ffffff;">0.0</th>
-          <th style="background-color: #ffebe6;">0.3</th>
-          <th style="background-color: #ffc2b3;">0.5</th>
-          <th style="background-color: #ff9980;">0.7</th>
-          <th style="background-color: #ff704d;">1.0</th>
+          <th>Method</th>
+          <th style="background-color: #b3d1ff;">0.6</th>
+          <th style="background-color: #e6f0ff;">0.8</th>
+          <th style="background-color: #ffffff;">1.0</th>
+          <th style="background-color: #ffebe6;">1.2</th>
+          <th style="background-color: #ffc2b3;">1.4</th>
         </tr>
       </thead>
 
       <tbody>
+            <tr>
+          <th style="background-color: #f2f2f2;">Ground truth</th>
+          <td> - </td>
+          <td> - </td>
+          <td><audio controls=""><source src="audio/syn_prosody36h_-1.0_0_0_0_0/syn_137.wav" type="audio/wav"></audio></td>
+          <td> - </td>
+          <td> - </td>
+        </tr>
 
         <tr>
-          <th style="background-color: #f2f2f2;">Pitch</th>
+          <th style="background-color: #f2f2f2;">Baseline</th>
           <td><audio controls=""><source src="audio/syn_prosody36h_-1.0_0_0_0_0/syn_137.wav" type="audio/wav"></audio></td>
           <td><audio controls=""><source src="audio/syn_prosody36h_-0.7_0_0_0_0/syn_137.wav" type="audio/wav"></audio></td>
           <td><audio controls=""><source src="audio/syn_prosody36h_-0.5_0_0_0_0/syn_137.wav" type="audio/wav"></audio></td>
           <td><audio controls=""><source src="audio/syn_prosody36h_-0.3_0_0_0_0/syn_137.wav" type="audio/wav"></audio></td>
-          <td><audio controls=""><source src="audio/syn_prosody36h_0.0_0_0_0_0/syn_137.wav" type="audio/wav"></audio></td>
-          <td><audio controls=""><source src="audio/syn_prosody36h_0.3_0_0_0_0/syn_137.wav" type="audio/wav"></audio></td>
-          <td><audio controls=""><source src="audio/syn_prosody36h_0.5_0_0_0_0/syn_137.wav" type="audio/wav"></audio></td>
-          <td><audio controls=""><source src="audio/syn_prosody36h_0.7_0_0_0_0/syn_137.wav" type="audio/wav"></audio></td>
-          <td><audio controls=""><source src="audio/syn_prosody36h_1.0_0_0_0_0/syn_137.wav" type="audio/wav"></audio></td>
+           <td><audio controls=""><source src="audio/syn_prosody36h_-0.3_0_0_0_0/syn_137.wav" type="audio/wav"></audio></td>
         </tr>
 
         <tr>
-          <th style="background-color: #f2f2f2;">Pitch range</th>
+          <th style="background-color: #f2f2f2;">Proposed_NoVQ</th>
           <td><audio controls=""><source src="audio/syn_prosody36h_0_-1.0_0_0_0/syn_137.wav" type="audio/wav"></audio></td>
           <td><audio controls=""><source src="audio/syn_prosody36h_0_-0.7_0_0_0/syn_137.wav" type="audio/wav"></audio></td>
           <td><audio controls=""><source src="audio/syn_prosody36h_0_-0.5_0_0_0/syn_137.wav" type="audio/wav"></audio></td>
           <td><audio controls=""><source src="audio/syn_prosody36h_0_-0.3_0_0_0/syn_137.wav" type="audio/wav"></audio></td>
           <td><audio controls=""><source src="audio/syn_prosody36h_0_0.0_0_0_0/syn_137.wav" type="audio/wav"></audio></td>
-          <td><audio controls=""><source src="audio/syn_prosody36h_0_0.3_0_0_0/syn_137.wav" type="audio/wav"></audio></td>
-          <td><audio controls=""><source src="audio/syn_prosody36h_0_0.5_0_0_0/syn_137.wav" type="audio/wav"></audio></td>
-          <td><audio controls=""><source src="audio/syn_prosody36h_0_0.7_0_0_0/syn_137.wav" type="audio/wav"></audio></td>
-          <td><audio controls=""><source src="audio/syn_prosody36h_0_1.0_0_0_0/syn_137.wav" type="audio/wav"></audio></td>
         </tr>
 
         <tr>
-          <th style="background-color: #f2f2f2;">Duration</th>
+          <th style="background-color: #f2f2f2;">Proposed_VQ</th>
           <td><audio controls=""><source src="audio/syn_prosody36h_0_0_-1.0_0_0/syn_137.wav" type="audio/wav"></audio></td>
           <td><audio controls=""><source src="audio/syn_prosody36h_0_0_-0.7_0_0/syn_137.wav" type="audio/wav"></audio></td>
           <td><audio controls=""><source src="audio/syn_prosody36h_0_0_-0.5_0_0/syn_137.wav" type="audio/wav"></audio></td>
           <td><audio controls=""><source src="audio/syn_prosody36h_0_0_-0.3_0_0/syn_137.wav" type="audio/wav"></audio></td>
-          <td><audio controls=""><source src="audio/syn_prosody36h_0_0_0.0_0_0/syn_137.wav" type="audio/wav"></audio></td>
-          <td><audio controls=""><source src="audio/syn_prosody36h_0_0_0.3_0_0/syn_137.wav" type="audio/wav"></audio></td>
-          <td><audio controls=""><source src="audio/syn_prosody36h_0_0_0.5_0_0/syn_137.wav" type="audio/wav"></audio></td>
-          <td><audio controls=""><source src="audio/syn_prosody36h_0_0_0.7_0_0/syn_137.wav" type="audio/wav"></audio></td>
-          <td><audio controls=""><source src="audio/syn_prosody36h_0_0_1.0_0_0/syn_137.wav" type="audio/wav"></audio></td>
-        </tr>
-
-        <tr>
-          <th style="background-color: #f2f2f2;">Energy</th>
-          <td><audio controls=""><source src="audio/syn_prosody36h_0_0_0_-1.0_0/syn_137.wav" type="audio/wav"></audio></td>
-          <td><audio controls=""><source src="audio/syn_prosody36h_0_0_0_-0.7_0/syn_137.wav" type="audio/wav"></audio></td>
-          <td><audio controls=""><source src="audio/syn_prosody36h_0_0_0_-0.5_0/syn_137.wav" type="audio/wav"></audio></td>
-          <td><audio controls=""><source src="audio/syn_prosody36h_0_0_0_-0.3_0/syn_137.wav" type="audio/wav"></audio></td>
-          <td><audio controls=""><source src="audio/syn_prosody36h_0_0_0_0.0_0/syn_137.wav" type="audio/wav"></audio></td>
-          <td><audio controls=""><source src="audio/syn_prosody36h_0_0_0_0.3_0/syn_137.wav" type="audio/wav"></audio></td>
-          <td><audio controls=""><source src="audio/syn_prosody36h_0_0_0_0.5_0/syn_137.wav" type="audio/wav"></audio></td>
-          <td><audio controls=""><source src="audio/syn_prosody36h_0_0_0_0.7_0/syn_137.wav" type="audio/wav"></audio></td>
-          <td><audio controls=""><source src="audio/syn_prosody36h_0_0_0_1.0_0/syn_137.wav" type="audio/wav"></audio></td>
-        </tr>
-
-        <tr>
-          <th style="background-color: #f2f2f2;">Spectral tilt</th>
-          <td><audio controls=""><source src="audio/syn_prosody36h_0_0_0_0_-1.0/syn_137.wav" type="audio/wav"></audio></td>
-          <td><audio controls=""><source src="audio/syn_prosody36h_0_0_0_0_-0.7/syn_137.wav" type="audio/wav"></audio></td>
-          <td><audio controls=""><source src="audio/syn_prosody36h_0_0_0_0_-0.5/syn_137.wav" type="audio/wav"></audio></td>
-          <td><audio controls=""><source src="audio/syn_prosody36h_0_0_0_0_-0.3/syn_137.wav" type="audio/wav"></audio></td>
-          <td><audio controls=""><source src="audio/syn_prosody36h_0_0_0_0_0.0/syn_137.wav" type="audio/wav"></audio></td>
-          <td><audio controls=""><source src="audio/syn_prosody36h_0_0_0_0_0.3/syn_137.wav" type="audio/wav"></audio></td>
-          <td><audio controls=""><source src="audio/syn_prosody36h_0_0_0_0_0.5/syn_137.wav" type="audio/wav"></audio></td>
-          <td><audio controls=""><source src="audio/syn_prosody36h_0_0_0_0_0.7/syn_137.wav" type="audio/wav"></audio></td>
-          <td><audio controls=""><source src="audio/syn_prosody36h_0_0_0_0_1.0/syn_137.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="audio/syn_prosody36h_0_0_0.0_0_0/syn_137.wav" type="audio/wav"></audio></td>>
         </tr>
 
       </tbody>
     </table>
+    <br>
+    <br>
 
-    <br>
-    <br>
-    
-
-    <br>
-    <br>
     <br>
 
   </body>
